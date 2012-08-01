@@ -9,7 +9,7 @@ from Products.PloneTestCase import PloneTestCase as ptc
 from Products.PloneTestCase.layer import PloneSite
 ptc.setupPloneSite()
 
-import kk.tiles
+import vwc.tiles
 
 
 class TestCase(ptc.PloneTestCase):
@@ -19,7 +19,7 @@ class TestCase(ptc.PloneTestCase):
         @classmethod
         def setUp(cls):
             fiveconfigure.debug_mode = True
-            ztc.installPackage(kk.tiles)
+            ztc.installPackage(vwc.tiles)
             fiveconfigure.debug_mode = False
 
         @classmethod
@@ -32,21 +32,21 @@ def test_suite():
 
         # Unit tests
         #doctestunit.DocFileSuite(
-        #    'README.txt', package='kk.tiles',
+        #    'README.txt', package='vwc.tiles',
         #    setUp=testing.setUp, tearDown=testing.tearDown),
 
         #doctestunit.DocTestSuite(
-        #    module='kk.tiles.mymodule',
+        #    module='vwc.tiles.mymodule',
         #    setUp=testing.setUp, tearDown=testing.tearDown),
 
 
         # Integration tests that use PloneTestCase
         #ztc.ZopeDocFileSuite(
-        #    'README.txt', package='kk.tiles',
+        #    'README.txt', package='vwc.tiles',
         #    test_class=TestCase),
 
         #ztc.FunctionalDocFileSuite(
-        #    'browser.txt', package='kk.tiles',
+        #    'browser.txt', package='vwc.tiles',
         #    test_class=TestCase),
 
         ])

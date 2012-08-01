@@ -25,6 +25,13 @@ setup(name='kk.tiles',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'five.grok',
+          'lxml',
+          'plone.app.dexterity',
+          'plone.app.blocks',
+          'plone.app.textfield',
+          'plone.app.tiles',
+          'plone.tiles',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

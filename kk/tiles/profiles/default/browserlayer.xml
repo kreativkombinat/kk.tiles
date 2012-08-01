@@ -1,0 +1,6 @@
+<layers>
+    <layer
+        name="kk.tiles"
+        interface="kk.tiles.interfaces.IKKTilesLayer"
+    />
+</layers>
